@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+/* quitamos los vordes por defecto de la web */
+
+
+
+/* html{
+    height: 100%;
+} */
+/* body {
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+  } */
+.conteiner > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    /* border-radius: 1px; */
+    padding: 10px;
+    /* text-align: center; */
+    /* estamos dando estilo  */
+    /* min-height: 100%; */
+    /* ------------------------------------------------------------------- */
+  }
+  .header {
+    grid-area: header;
+    background-color: #205581;
+  }
+  
+  .navbar {
+    grid-area: navbar;
+    background-color: #f5f5f5f8;
+  }
+  
+  .sidebar {
+    grid-area: alejadro;
+    background-color: #fff;
+  }
+
+
+  
+  
+  .main {
+    grid-area: benen;
+    background-color: #f5f5f5;
+  }
+  /* -------------------------------------------------------------------------- */
+ 
+
+
+
+
+
+  /* .footer {
+    grid-area: footer;
+    background-color: #8c96a0;
+  } */
+  .conteiner {
+    display: grid;
+    /* convertimos en grid */
+  /* gap: 10px; */
+  grid-template:
+  "header"  60px
+  "navbar"  60px
+  "alejadro"   300px
+  /* "nuevoaside"   100px */
+  "benen" 300px;
+  /* "footer"  100px; */
+ 
+/* nuevo metodo de utilisar grid_template */
+
+}
+@media (min-width: 600px) {
+    .conteiner {
+          background-color: black;
+grid-template:
+"header   header "  70px
+"navbar   navbar"   60px     /* no puedo poner auto nose porq*/ 
+
+   
+"alejadro  benen"   350px
+
+"alejadro     benen" 350px /
+
+/* "footer   footer"  300px / */
+200px    auto
+/* auto completa el espacio q sobra de la pagina
+ */
+
+
+;
+      
+  }
+
+  }
+  @media (min-width: 900px) {
+    .conteiner {
+          background-color:chartreuse;
+          grid-template:
+          "header   header "  80px
+          "alejadro    navbar"   70px     /* no puedo poner auto nose porq*/ 
+          
+             
+          "alejadro  benen"   350px
+          
+          "alejadro     benen"        400px /
+          
+          /* "footer   footer"  300px / */
+          300px    auto
+          /* auto completa el espacio q sobra de la pagina
+           */
+          
+          
+          ;
+               
+          
+
+
+
+
+            }
+            .header{
+              display: flex;
+  justify-content: space-between;
+  color: white;
+ 
+
+  
+            }
+            /* img{
+              display: flex;
+              margin-right: 100px;
+              max-width: 50px;
+              max-height: 50px;
+             background: #205581;
+             
+
+            } */
+            img{
+              height: 30px;
+              width: 30px;
+            }
+            .icomenu{
+              display: flex;
+              margin-right: 1100px;
+             
+
+               }
+            .perfil a{
+              color: white;
+              text-decoration: none;
+              font-size: 20px;
+              
+            }
+            .navbar {
+              display: flex;
+              justify-content: right;
+              color: black;
+              gap: 10px;
+              text-decoration: none;
+              
+
+
+            }
+            
+
+  .sidebar .colum {
+    display: flex;    
+    background-color: #fff;
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.205);
+    height: 60PX;
+ 
+              }
+               .colum .icocasa {
+                display: flex;    
+                background-color: #fff;
+                margin-left: 20px;
+               margin-top: 10px;
+                /* height: 60PX; */
+               
+               /* justify-content: right; */
+                
+                          }
+              a{
+                display: flex;
+                margin-top: 15px;
+              }
+
+              .main {
+                display: flex;
+                justify-content: space-between;
+              }
+              .izquierda {
+                display: flex;
+                background: crimson;
+               width: 1000px;
+                height: 600px;
+                flex-direction: column;
+                gap: 20px;
+                
+
+                
+              }
+              .busq {
+                display: flex;
+                justify-content: end;
+                margin-left: 100px;
+                margin-top: 30px;
+                /* width: 300px;
+                height: 40PX; */
+                gap: 30px;
+
+              }
+              #table {
+                 
+                align-content: center;  
+                /* margin-left: 100px; */
+                border: 1px solid black; 
+                text-indent: 60px;
+                display: flex;
+                justify-content: space-evenly;
+                align-content: center;  
+                margin-left: 100px;
+                width: 800px;
+              
+                
+                
+
+              }
+              .boton {
+                display: flex;
+                /* justify-content: space-evenly; */
+    align-content: center;  
+    margin-top: 600px;
+    margin-left: 190px;
+     margin-top: 100px;
+      width: 30%;
+   
+    height: 40px;
+
+  
+      
+      /* background-color: cornflowerblue; */
+      color: white;
+      box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.205);
+      /* border: 3px double rgb(5, 35, 92); */
+      /* border-radius: 5px; */
+  
+  
+
+
+              }
+
+
+
+
+
+           .derecha {
+            display: flex;
+            
+            background: cornflowerblue;
+            width: 400px;
+                height: 600px;
+                }
+
+
+
+            
+
+  }
+
+
+
